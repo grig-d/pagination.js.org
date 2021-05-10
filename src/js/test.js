@@ -1,5 +1,5 @@
 import EventsApiService from './api/EventsApiService';
-// import paginate from './pagination';
+import paginateRandomEvents from './pagination';
 
 // 1 FR France
 // 9 FI Finland
@@ -26,14 +26,11 @@ const eventsApiService = new EventsApiService();
 // eventsApiService.fetchEventsByCoutry('US').then(console.log).catch(console.log);
 
 ////grig
-eventsApiService
-  .fetchEventsByCoutry('DE')
-  .then(response => {
-    console.log(response);
-    console.log(eventsApiService.totalPages);
-    // paginate(eventsApiService.totalPages);
-  })
-  .catch(console.log);
+// eventsApiService
+//   .fetchRandomEvents()
+//   .then(response => paginateRandomEvents(eventsApiService, response))
+//   .catch(console.log);
+
 
 // Событие по id
 // eventsApiService
